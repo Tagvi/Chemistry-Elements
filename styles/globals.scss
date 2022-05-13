@@ -1,0 +1,26 @@
+@use "scss/mixins.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #efefef;
+  --primary: #1d1d1d;
+  font-size: 100%;
+  @include lg {
+    font-size: 125%;
+  }
+}
+::selection {
+  color: white;
+  background-color: var(--primary);
+}
+body {
+  font-family: "Noto Sans Georgian", sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+}
